@@ -1,75 +1,75 @@
+# 📄 Information Retrieval from Multiple PDFs using Google GenAI
 
+A conversational **RAG (Retrieval-Augmented Generation)** system that allows users to upload multiple PDF files and ask questions about their content.  
+Built with **LangChain, FAISS, Google GenAI, and Streamlit**.
 
-📄 Information Retrieval from Multiple PDFs using Google GenAI
+## 🚀 Features
 
-A conversational RAG system that allows users to upload multiple PDF files and ask questions about their content.
-Built with LangChain, FAISS, Google GenAI, and Streamlit.
+- 📤 Upload multiple PDF files  
+- 📚 Extract and preprocess text  
+- 🔍 Split text into meaningful chunks for high-quality retrieval  
+- 🧠 Generate vector embeddings using Google GenAI  
+- ⚡ Store and search embeddings using FAISS  
+- 💬 Conversational multi-turn Q&A with a full RAG pipeline  
+- 🌐 Clean and interactive Streamlit UI  
 
-🚀 Features
+## 🛠️ Tech Stack
 
-📤 Upload multiple PDF files
+| Component           | Purpose                                  |
+|--------------------|-------------------------------------------|
+| Python             | Core programming language                 |
+| Streamlit          | Web interface for chat + file uploads     |
+| LangChain          | Text splitting, embeddings, RAG pipeline  |
+| Google GenAI API   | LLM + embeddings generation               |
+| FAISS              | Vector database for fast retrieval        |
 
-📚 Extract and preprocess text
+## 🏗️ How to Run the Project
 
-🔍 Split text into meaningful chunks for high-quality retrieval
+Follow these steps to run the project locally:
 
-🧠 Generate vector embeddings with Google GenAI
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Information-Retrieval-System
 
-⚡ Store and search embeddings using FAISS
+cd Information-Retrieval-System
 
-💬 Conversational multi-turn Q&A using a RAG pipeline
+```
 
-🌐 Clean and interactive Streamlit UI
-
-🛠️ Tech Stack
-Component	Purpose
-Python	Core programming language
-Streamlit	Web interface for chat and file uploads
-LangChain	Text splitting, embeddings, and RAG pipeline
-Google GenAI API	Embeddings + LLM for responses
-FAISS	Vector database for fast semantic search
-🏗️ How to Run the Project
-
-Follow these steps to get the project running locally:
-
-1️⃣ Clone the repository
-git clone https://github.com/your-repo-name
-cd your-repo-name
-
-2️⃣ Create and activate a Conda environment
+### 2️⃣ Create and activate a Conda environment
+```bash
 conda create -n llmapp python=3.8 -y
 conda activate llmapp
+```
 
-3️⃣ Install required dependencies
+### 3️⃣ Install required dependencies
+```bash
 pip install -r requirements.txt
+```
 
-4️⃣ Add your environment variables
+### 4️⃣ Add your environment variables
 
-Create a .env file in the project root and add:
+Create a `.env` file in the project root:
 
+```
 GOOGLE_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
 
-5️⃣ Run the Streamlit app
+### 5️⃣ Run the Streamlit app
+```bash
 streamlit run app.py
+```
 
-6️⃣ Open in browser
+### 6️⃣ Open in browser
 
-Visit:
-
+Visit:  
 http://localhost:8501
 
-📦 Project Workflow
+## 📦 Project Workflow
 
-Upload PDFs
-
-Extract raw text
-
-Split text into smaller chunks
-
-Create embeddings using Google GenAI
-
-Store vectors in FAISS
-
-Semantic search + conversational querying
-
-LLM generates human-like answers with retrieved context
+1. Upload PDFs  
+2. Extract raw text  
+3. Split text into smaller chunks  
+4. Generate embeddings using Google GenAI  
+5. Store vectors in FAISS  
+6. Perform semantic search + conversational querying  
+7. LLM generates human-like answers with retrieved context  
